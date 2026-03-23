@@ -1,17 +1,28 @@
 package orkutNetwork;
 public class PersonIteratorClass implements PersonIterator {
-    @Override
-    public boolean hasNext() {
-        return false;
-    }
+    private  Person[] person;
+    private int counter;
+    private int current;
 
-    @Override
-    public Person next() {
-        return null;
+    public PersonIteratorClass(Person[] person, int counter){
+        this.person = person;
+        this.counter = counter;
+        this.current = 0;
     }
 
     @Override
     public void init() {
-
+        current = 0;
     }
+    @Override
+    public boolean hasNext() {
+        return current < counter;
+    }
+
+    @Override
+    public Person next() {
+        return person[current++];
+    }
+
+
 }

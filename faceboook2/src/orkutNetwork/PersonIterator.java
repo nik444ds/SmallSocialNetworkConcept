@@ -1,5 +1,6 @@
 package orkutNetwork;
 public interface PersonIterator {
+
    boolean  hasNext();
 
 

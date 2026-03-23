@@ -4,7 +4,10 @@ import java.util.Scanner;
  */
 public class Main {
     // Comands from user
-    public static final String REGISTERED = ("REGISTERED");
+    public static final String CMD_REGISTERED ="REGISTERED";
+    public static final String CMD_
+    public static final String CMD_ERROR = "UNKNOWN COMMAND";
+    public static final String CMD_QUIT = "QUIT";
 
 
 
@@ -20,18 +23,18 @@ private static String getCommand(Scanner in){
 }
 
     public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    String command;{
-        case REGISTERED -> getRegistered(in, );
+        Scanner in = new Scanner(System.in);
+        String command = in.nextLine();
+        while (!command.equals(CMD_QUIT)) {
+            switch (command) {
+                case CMD_REGISTERED -> getRegistered(in, );
+
+
+                default System.out.println(CMD_ERROR);
+            }
         }
-
-    do{
-        command = getCommand(in);
-        switch(command)
     }
 
-
-    }
 
     private static void getRegistered(Scanner in, String registeredGuy){
 

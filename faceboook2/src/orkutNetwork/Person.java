@@ -9,5 +9,13 @@ public interface Person {
 
   boolean hasFriend();
 
-  void addFriend(String name);
+  void addFriend(Person person);
+
+  void setStatus(String newFriend);
+
+  boolean areFriend(String friendUser);
+
+Person[] listOfFriends();
+int friendsCounter();
+
 }
