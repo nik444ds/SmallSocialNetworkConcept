@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import orkutNetwork.*;
 /**Nicolas Nº74517
  *
  */
