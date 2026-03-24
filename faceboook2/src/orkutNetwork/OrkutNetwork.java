@@ -25,4 +25,8 @@ public interface OrkutNetwork {
 
      // list all users in network
      PersonIterator listUsers();
+
+     boolean hasFriendship(String name);
+
+     boolean hasUsers();
 }

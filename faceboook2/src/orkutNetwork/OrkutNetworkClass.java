@@ -84,4 +84,20 @@ public OrkutNetworkClass(){
     public PersonIterator listUsers() {
         return new PersonIteratorClass(users, counter);
     }
+
+    @Override
+    public boolean hasFriendship(String name) {
+    for(int i = 0; i < counter;i++){
+        if(name.equals(users[i].getName())){
+            return users[i].hasFriend();
+        }
+    }
+
+        return false;
+    }
+
+    @Override
+    public boolean hasUsers() {
+        return counter > 0;
+    }
 }
