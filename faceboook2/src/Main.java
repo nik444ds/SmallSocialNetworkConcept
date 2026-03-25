@@ -16,6 +16,7 @@ public class Main {
     public static final String CMD_LIST_USER = "USERS";
     public static final String CMD_NEW_STATUS = "NEWSTATUS";
     public static final String CMD_CHECK_STATUS = "CHECKSTATUS";
+    public static final String CMD_SHOW_COMMANDS = "SHOW";
 
 //Answers for User
 public static final String ALREADY_REGISTERED = "Already registered.";
@@ -42,6 +43,7 @@ public static final String LIST_OF_USERS = "List of registered users:";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        showCommands();
         String command = getCommand(in).toUpperCase();
         while (!command.equals(CMD_QUIT)) {
             switch (command.toUpperCase()) {
@@ -53,6 +55,7 @@ public static final String LIST_OF_USERS = "List of registered users:";
                 case CMD_CHECK_STATUS -> checkStatus(in);
                 case CMD_NEW_STATUS -> newStatus(in);
                 case CMD_LIST_USER ->  listUsers(in);
+                case CMD_SHOW_COMMANDS -> showCommands();
 
 
 
@@ -175,5 +178,20 @@ public static final String LIST_OF_USERS = "List of registered users:";
                 System.out.println(p.getName() + "; " + p.getEmail());
             }
         }
+    }
+    private static void showCommands(){
+        System.out.println("Welcome to our OrkutNetwork");
+        System.out.println("Here you have the commands you can use in our platform.");
+        System.out.println(CMD_REGISTER);
+        System.out.println(CMD_REGISTERED);
+        System.out.println(CMD_ADD_FRIEND);
+        System.out.println(CMD_CHECK_STATUS);
+        System.out.println(CMD_CHECK_FRIENDSHIP);
+        System.out.println(CMD_LIST_USER);
+            System.out.println(CMD_LIST_FRIENDS);
+        System.out.println(CMD_QUIT);
+        System.out.println(CMD_NEW_STATUS);
+
+
     }
 }
