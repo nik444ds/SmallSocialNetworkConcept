@@ -1,4 +1,3 @@
-[SmallSocialNetwork_README.md](https://github.com/user-attachments/files/26673304/SmallSocialNetwork_README.md)
 # SmallSocialNetwork 
 
 A **Facebook-inspired social network** built in Java. Developed as an Object-Oriented Programming university project at FCT NOVA Lisbon.
