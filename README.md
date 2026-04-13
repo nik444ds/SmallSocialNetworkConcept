@@ -26,6 +26,7 @@ NEWSTATUS       - updates a user's status message
 CHECKSTATUS     - displays a user's current status
 USERS           - lists all registered users
 QUIT            - terminates the program
+HELP            - Show the commands for user
 ```
 
 ##  Usage example
